@@ -1392,3 +1392,634 @@ Processing by Api::V1::RolesController#index as HTML
 Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 1.8ms | Allocations: 3856)
 
 
+Started GET "/api/v1/applicants/?search=" for 172.19.0.1 at 2023-05-26 18:38:40 +0000
+  
+ActiveRecord::NoDatabaseError (We could not find your database: myapp_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/applicants/?search=" for 172.19.0.1 at 2023-05-26 18:38:40 +0000
+  
+ActiveRecord::NoDatabaseError (We could not find your database: myapp_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/applicants/?search=" for 172.19.0.1 at 2023-05-26 18:38:41 +0000
+  
+ActiveRecord::NoDatabaseError (We could not find your database: myapp_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/applicants/?search=" for 172.19.0.1 at 2023-05-26 18:38:41 +0000
+  
+ActiveRecord::NoDatabaseError (We could not find your database: myapp_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/applicants/?search=" for 172.19.0.1 at 2023-05-26 18:38:41 +0000
+  
+ActiveRecord::NoDatabaseError (We could not find your database: myapp_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (96.9ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (75.8ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateApplicants (20230522142216)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "applicants" ("id" bigserial primary key, "name" character varying, "phone" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230522142216"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20230522142300)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230522142300"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateApplicantsRoles (20230522142537)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "applicants_roles" ("id" bigserial primary key, "applicant_id" bigint NOT NULL, "role_id" bigint NOT NULL, "status" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ebed80372e"
+FOREIGN KEY ("applicant_id")
+  REFERENCES "applicants" ("id")
+, CONSTRAINT "fk_rails_625c3823a5"
+FOREIGN KEY ("role_id")
+  REFERENCES "roles" ("id")
+)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE INDEX "index_applicants_roles_on_applicant_id" ON "applicants_roles" ("applicant_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE INDEX "index_applicants_roles_on_role_id" ON "applicants_roles" ("role_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230522142537"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20230523222453)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "service_name" character varying NOT NULL, "byte_size" bigint NOT NULL, "checksum" character varying, "created_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230523222453"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDeletedAtToTables (20230526003058)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "applicants" ADD "deleted_at" timestamp(6)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE INDEX "index_applicants_on_deleted_at" ON "applicants" ("deleted_at")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "roles" ADD "deleted_at" timestamp(6)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_roles_on_deleted_at" ON "roles" ("deleted_at")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230526003058"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-05-26 18:39:10.503277"], ["updated_at", "2023-05-26 18:39:10.503277"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."deleted_at" IS NULL LIMIT $2[0m  [["email", "eric@gmail.com"], ["LIMIT", 1]]
+  [1m[36mApplicant Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."deleted_at" IS NULL LIMIT $2[0m  [["name", "Eric Cartman"], ["LIMIT", 1]]
+  [1m[36mApplicant Create (0.4ms)[0m  [1m[32mINSERT INTO "applicants" ("name", "phone", "email", "created_at", "updated_at", "deleted_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Eric Cartman"], ["phone", "1234567890"], ["email", "eric@gmail.com"], ["created_at", "2023-05-26 18:39:10.637883"], ["updated_at", "2023-05-26 18:39:10.637883"], ["deleted_at", nil]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:50:in `add_default_avatar'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["email", "eric@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["name", "Eric Cartman"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "2ahokxbxgep5w903yt59po1i1xgg"], ["filename", "default-user-image.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 1497], ["checksum", "EwABhHPMADgYeqoOJgT6Jw=="], ["created_at", "2023-05-26 18:39:10.783561"]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Applicant"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-05-26 18:39:10.786075"]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Update (0.4ms)[0m  [1m[33mUPDATE "applicants" SET "updated_at" = $1 WHERE "applicants"."id" = $2[0m  [["updated_at", "2023-05-26 18:39:10.788064"], ["id", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+[36m  Disk Storage (6.1ms) [0m[32mUploaded file to key: 2ahokxbxgep5w903yt59po1i1xgg (checksum: EwABhHPMADgYeqoOJgT6Jw==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 49a51236-db01-403d-a3c5-2641245321c6) to Async(default) with arguments: #<GlobalID:0x0000ffff77854ef0 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/1>>
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."deleted_at" IS NULL LIMIT $2[0m  [["email", "stan@gmail.com"], ["LIMIT", 1]]
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."deleted_at" IS NULL LIMIT $2[0m  [["name", "Stan Marsh"], ["LIMIT", 1]]
+  [1m[36mApplicant Create (0.3ms)[0m  [1m[32mINSERT INTO "applicants" ("name", "phone", "email", "created_at", "updated_at", "deleted_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Stan Marsh"], ["phone", "098765322"], ["email", "stan@gmail.com"], ["created_at", "2023-05-26 18:39:10.813174"], ["updated_at", "2023-05-26 18:39:10.813174"], ["deleted_at", nil]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:50:in `add_default_avatar'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["email", "stan@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["name", "Stan Marsh"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "r76ee04u817zn83b5qwh17xv2v4i"], ["filename", "default-user-image.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 1497], ["checksum", "EwABhHPMADgYeqoOJgT6Jw=="], ["created_at", "2023-05-26 18:39:10.824282"]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Applicant"], ["record_id", 2], ["blob_id", 2], ["created_at", "2023-05-26 18:39:10.826121"]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Update (0.2ms)[0m  [1m[33mUPDATE "applicants" SET "updated_at" = $1 WHERE "applicants"."id" = $2[0m  [["updated_at", "2023-05-26 18:39:10.827611"], ["id", 2]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+[36m  Disk Storage (5.1ms) [0m[32mUploaded file to key: r76ee04u817zn83b5qwh17xv2v4i (checksum: EwABhHPMADgYeqoOJgT6Jw==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: fe1a4c16-7352-4077-85f6-aa4c0aac540c) to Async(default) with arguments: #<GlobalID:0x0000ffff775cbc38 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/2>>
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."deleted_at" IS NULL LIMIT $2[0m  [["email", "kyle@gmail.com"], ["LIMIT", 1]]
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."deleted_at" IS NULL LIMIT $2[0m  [["name", "Kyle Broflovski"], ["LIMIT", 1]]
+  [1m[36mApplicant Create (0.2ms)[0m  [1m[32mINSERT INTO "applicants" ("name", "phone", "email", "created_at", "updated_at", "deleted_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kyle Broflovski"], ["phone", "123412340"], ["email", "kyle@gmail.com"], ["created_at", "2023-05-26 18:39:10.840495"], ["updated_at", "2023-05-26 18:39:10.840495"], ["deleted_at", nil]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:50:in `add_default_avatar'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["email", "kyle@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["name", "Kyle Broflovski"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "dq9p4up816u1l6yc5dwvcj52we26"], ["filename", "default-user-image.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 1497], ["checksum", "EwABhHPMADgYeqoOJgT6Jw=="], ["created_at", "2023-05-26 18:39:10.856414"]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Applicant"], ["record_id", 3], ["blob_id", 3], ["created_at", "2023-05-26 18:39:10.865956"]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mApplicant Update (0.4ms)[0m  [1m[33mUPDATE "applicants" SET "updated_at" = $1 WHERE "applicants"."id" = $2[0m  [["updated_at", "2023-05-26 18:39:10.868450"], ["id", 3]]
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/applicant.rb:51:in `add_default_avatar'
+[36m  Disk Storage (5.1ms) [0m[32mUploaded file to key: dq9p4up816u1l6yc5dwvcj52we26 (checksum: EwABhHPMADgYeqoOJgT6Jw==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: b124abd2-ab02-42f9-a408-3edbb2104d7a) to Async(default) with arguments: #<GlobalID:0x0000ffff7d44c528 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/3>>
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["email", "eric@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["name", "Eric Cartman"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "rd9y9p00mftv98rje5bstulr4gim"], ["filename", "eric.webp"], ["content_type", "image/webp"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 59034], ["checksum", "HSQp+rN/5GmW/2ebNG7uZw=="], ["created_at", "2023-05-26 18:39:10.886059"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Applicant"], ["record_id", 1], ["blob_id", 4], ["created_at", "2023-05-26 18:39:10.887307"]]
+  [1m[36mApplicant Update (0.2ms)[0m  [1m[33mUPDATE "applicants" SET "updated_at" = $1 WHERE "applicants"."id" = $2[0m  [["updated_at", "2023-05-26 18:39:10.888482"], ["id", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (6.6ms) [0m[32mUploaded file to key: rd9y9p00mftv98rje5bstulr4gim (checksum: HSQp+rN/5GmW/2ebNG7uZw==)[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 15eb386e-b750-4a93-94dd-52e15d459fc1) to Async(default) with arguments: #<GlobalID:0x0000ffff7c1756e8 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/1>>
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 825f017c-75b6-4321-9d1e-bcb2fd7e9eea) to Async(default) with arguments: #<GlobalID:0x0000ffff7c17e9a0 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/4>>
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["email", "stan@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["name", "Stan Marsh"], ["id", 2], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 2]]
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "kwr33o8g6sacd35f3ncp9q6tk58t"], ["filename", "stan.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 137425], ["checksum", "mgy3QaOn49DmJFCtBEvfVg=="], ["created_at", "2023-05-26 18:39:10.914812"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Applicant"], ["record_id", 2], ["blob_id", 5], ["created_at", "2023-05-26 18:39:10.916191"]]
+  [1m[36mApplicant Update (0.2ms)[0m  [1m[33mUPDATE "applicants" SET "updated_at" = $1 WHERE "applicants"."id" = $2[0m  [["updated_at", "2023-05-26 18:39:10.917279"], ["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (7.1ms) [0m[32mUploaded file to key: kwr33o8g6sacd35f3ncp9q6tk58t (checksum: mgy3QaOn49DmJFCtBEvfVg==)[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 2b3a2deb-5320-45e2-a1e8-9e2e0a66a130) to Async(default) with arguments: #<GlobalID:0x0000ffff7c07d9c0 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/2>>
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 98961f99-2cb5-49ac-9fb7-6f7a65487819) to Async(default) with arguments: #<GlobalID:0x0000ffff7c082dd0 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/5>>
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."email" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["email", "kyle@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mApplicant Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "applicants" WHERE "applicants"."name" = $1 AND "applicants"."deleted_at" IS NULL AND "applicants"."id" != $2 AND "applicants"."deleted_at" IS NULL LIMIT $3[0m  [["name", "Kyle Broflovski"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 3]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "ifknm2sj6rcukeuii43dl6wprtcx"], ["filename", "kyle.jpeg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 6714], ["checksum", "htxFZQb7XheBcJh6LUBnow=="], ["created_at", "2023-05-26 18:39:10.934229"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Applicant"], ["record_id", 3], ["blob_id", 6], ["created_at", "2023-05-26 18:39:10.935439"]]
+  [1m[36mApplicant Update (0.2ms)[0m  [1m[33mUPDATE "applicants" SET "updated_at" = $1 WHERE "applicants"."id" = $2[0m  [["updated_at", "2023-05-26 18:39:10.936818"], ["id", 3]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (8.0ms) [0m[32mUploaded file to key: ifknm2sj6rcukeuii43dl6wprtcx (checksum: htxFZQb7XheBcJh6LUBnow==)[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 2540ad72-5aaa-473a-9161-e4be3aa6c872) to Async(default) with arguments: #<GlobalID:0x0000ffff77fd5d00 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/3>>
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: d99db4c3-8f51-4197-b913-fc3a4c8e1fbb) to Async(default) with arguments: #<GlobalID:0x0000ffff77fdb110 @uri=#<URI::GID gid://internship/ActiveStorage::Blob/6>>
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "roles" WHERE "roles"."name" = $1 AND "roles"."deleted_at" IS NULL AND "roles"."deleted_at" IS NULL LIMIT $2[0m  [["name", "Frontend"], ["LIMIT", 1]]
+  [1m[36mRole Create (0.6ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at", "deleted_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Frontend"], ["created_at", "2023-05-26 18:39:10.965591"], ["updated_at", "2023-05-26 18:39:10.965591"], ["deleted_at", nil]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "roles" WHERE "roles"."name" = $1 AND "roles"."deleted_at" IS NULL AND "roles"."deleted_at" IS NULL LIMIT $2[0m  [["name", "Backend"], ["LIMIT", 1]]
+  [1m[36mRole Create (0.2ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at", "deleted_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Backend"], ["created_at", "2023-05-26 18:39:10.970446"], ["updated_at", "2023-05-26 18:39:10.970446"], ["deleted_at", nil]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "roles" WHERE "roles"."name" = $1 AND "roles"."deleted_at" IS NULL AND "roles"."deleted_at" IS NULL LIMIT $2[0m  [["name", "Design"], ["LIMIT", 1]]
+  [1m[36mRole Create (0.2ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at", "deleted_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Design"], ["created_at", "2023-05-26 18:39:10.974307"], ["updated_at", "2023-05-26 18:39:10.974307"], ["deleted_at", nil]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Load (0.2ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants" WHERE "applicants"."deleted_at" IS NULL AND "applicants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApplicantsRole Create (0.8ms)[0m  [1m[32mINSERT INTO "applicants_roles" ("applicant_id", "role_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["applicant_id", 1], ["role_id", 1], ["status", nil], ["created_at", "2023-05-26 18:39:10.990911"], ["updated_at", "2023-05-26 18:39:10.990911"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Load (0.2ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants" WHERE "applicants"."deleted_at" IS NULL AND "applicants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApplicantsRole Create (0.2ms)[0m  [1m[32mINSERT INTO "applicants_roles" ("applicant_id", "role_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["applicant_id", 1], ["role_id", 2], ["status", nil], ["created_at", "2023-05-26 18:39:10.995730"], ["updated_at", "2023-05-26 18:39:10.995730"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Load (0.1ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants" WHERE "applicants"."deleted_at" IS NULL AND "applicants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mApplicantsRole Create (0.3ms)[0m  [1m[32mINSERT INTO "applicants_roles" ("applicant_id", "role_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["applicant_id", 2], ["role_id", 2], ["status", nil], ["created_at", "2023-05-26 18:39:10.999561"], ["updated_at", "2023-05-26 18:39:10.999561"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApplicant Load (0.2ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants" WHERE "applicants"."deleted_at" IS NULL AND "applicants"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mApplicantsRole Create (0.2ms)[0m  [1m[32mINSERT INTO "applicants_roles" ("applicant_id", "role_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["applicant_id", 3], ["role_id", 3], ["status", nil], ["created_at", "2023-05-26 18:39:11.003800"], ["updated_at", "2023-05-26 18:39:11.003800"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/applicants/?search=" for 172.19.0.1 at 2023-05-26 18:39:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ApplicantsController#index as HTML
+  Parameters: {"search"=>""}
+  [1m[36mApplicant Load (2.2ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants" WHERE "applicants"."deleted_at" IS NULL AND (name ILIKE '%%')[0m
+  ↳ app/controllers/api/v1/applicants_controller.rb:8:in `map'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mRole Load (1.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "applicants_roles" ON "roles"."id" = "applicants_roles"."role_id" WHERE "roles"."deleted_at" IS NULL AND "applicants_roles"."applicant_id" = $1[0m  [["applicant_id", 1]]
+  ↳ app/models/applicant.rb:28:in `map'
+  [1m[36mApplicantsRole Load (0.2ms)[0m  [1m[34mSELECT "applicants_roles".* FROM "applicants_roles" WHERE "applicants_roles"."role_id" = $1 AND "applicants_roles"."applicant_id" = $2 LIMIT $3[0m  [["role_id", 1], ["applicant_id", 1], ["LIMIT", 1]]
+  ↳ app/models/role.rb:22:in `show_status'
+  [1m[36mApplicantsRole Load (0.2ms)[0m  [1m[34mSELECT "applicants_roles".* FROM "applicants_roles" WHERE "applicants_roles"."role_id" = $1 AND "applicants_roles"."applicant_id" = $2 LIMIT $3[0m  [["role_id", 2], ["applicant_id", 1], ["LIMIT", 1]]
+  ↳ app/models/role.rb:22:in `show_status'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "applicants_roles" ON "roles"."id" = "applicants_roles"."role_id" WHERE "roles"."deleted_at" IS NULL AND "applicants_roles"."applicant_id" = $1[0m  [["applicant_id", 2]]
+  ↳ app/models/applicant.rb:28:in `map'
+  [1m[36mApplicantsRole Load (0.2ms)[0m  [1m[34mSELECT "applicants_roles".* FROM "applicants_roles" WHERE "applicants_roles"."role_id" = $1 AND "applicants_roles"."applicant_id" = $2 LIMIT $3[0m  [["role_id", 2], ["applicant_id", 2], ["LIMIT", 1]]
+  ↳ app/models/role.rb:22:in `show_status'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mRole Load (0.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "applicants_roles" ON "roles"."id" = "applicants_roles"."role_id" WHERE "roles"."deleted_at" IS NULL AND "applicants_roles"."applicant_id" = $1[0m  [["applicant_id", 3]]
+  ↳ app/models/applicant.rb:28:in `map'
+  [1m[36mApplicantsRole Load (0.4ms)[0m  [1m[34mSELECT "applicants_roles".* FROM "applicants_roles" WHERE "applicants_roles"."role_id" = $1 AND "applicants_roles"."applicant_id" = $2 LIMIT $3[0m  [["role_id", 3], ["applicant_id", 3], ["LIMIT", 1]]
+  ↳ app/models/role.rb:22:in `show_status'
+Completed 200 OK in 340ms (Views: 0.6ms | ActiveRecord: 24.3ms | Allocations: 50976)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--481af8ae65058c7f4f153fbbe11c50da12d5355b/stan.png" for 172.19.0.1 at 2023-05-26 18:39:15 +0000
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fcc736c54d54e1aea1e2f5b208f83c0cda853ba7/kyle.jpeg" for 172.19.0.1 at 2023-05-26 18:39:15 +0000
+Started GET "/api/v1/applicants/?search=" for 172.19.0.1 at 2023-05-26 18:39:15 +0000
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0b98880753485fc182ae20cbd39942252fdff9d3/eric.webp" for 172.19.0.1 at 2023-05-26 18:39:15 +0000
+Processing by Api::V1::ApplicantsController#index as HTML
+  Parameters: {"search"=>""}
+  [1m[36mApplicant Load (1.9ms)[0m  [1m[34mSELECT "applicants".* FROM "applicants" WHERE "applicants"."deleted_at" IS NULL AND (name ILIKE '%%')[0m
+  ↳ app/controllers/api/v1/applicants_controller.rb:8:in `map'
+  [1m[36mActiveStorage::Attachment Load (13.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+Processing by ActiveStorage::Blobs::RedirectController#show as */*
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0b98880753485fc182ae20cbd39942252fdff9d3", "filename"=>"eric"}
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fcc736c54d54e1aea1e2f5b208f83c0cda853ba7", "filename"=>"kyle"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--481af8ae65058c7f4f153fbbe11c50da12d5355b", "filename"=>"stan"}
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "applicants_roles" ON "roles"."id" = "applicants_roles"."role_id" WHERE "roles"."deleted_at" IS NULL AND "applicants_roles"."applicant_id" = $1[0m  [["applicant_id", 1]]
+  ↳ app/models/applicant.rb:28:in `map'
+  [1m[36mApplicantsRole Load (8.4ms)[0m  [1m[34mSELECT "applicants_roles".* FROM "applicants_roles" WHERE "applicants_roles"."role_id" = $1 AND "applicants_roles"."applicant_id" = $2 LIMIT $3[0m  [["role_id", 1], ["applicant_id", 1], ["LIMIT", 1]]
+  ↳ app/models/role.rb:22:in `show_status'
+  [1m[36mApplicantsRole Load (4.5ms)[0m  [1m[34mSELECT "applicants_roles".* FROM "applicants_roles" WHERE "applicants_roles"."role_id" = $1 AND "applicants_roles"."applicant_id" = $2 LIMIT $3[0m  [["role_id", 2], ["applicant_id", 1], ["LIMIT", 1]]
+  ↳ app/models/role.rb:22:in `show_status'
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mRole Load (1.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "applicants_roles" ON "roles"."id" = "applicants_roles"."role_id" WHERE "roles"."deleted_at" IS NULL AND "applicants_roles"."applicant_id" = $1[0m  [["applicant_id", 2]]
+  ↳ app/models/applicant.rb:28:in `map'
+  [1m[36mApplicantsRole Load (1.0ms)[0m  [1m[34mSELECT "applicants_roles".* FROM "applicants_roles" WHERE "applicants_roles"."role_id" = $1 AND "applicants_roles"."applicant_id" = $2 LIMIT $3[0m  [["role_id", 2], ["applicant_id", 2], ["LIMIT", 1]]
+  ↳ app/models/role.rb:22:in `show_status'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Applicant"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/applicant.rb:46:in `avatar_url'
+  [1m[36mRole Load (1.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "applicants_roles" ON "roles"."id" = "applicants_roles"."role_id" WHERE "roles"."deleted_at" IS NULL AND "applicants_roles"."applicant_id" = $1[0m  [["applicant_id", 3]]
+  ↳ app/models/applicant.rb:28:in `map'
+  [1m[36mApplicantsRole Load (0.2ms)[0m  [1m[34mSELECT "applicants_roles".* FROM "applicants_roles" WHERE "applicants_roles"."role_id" = $1 AND "applicants_roles"."applicant_id" = $2 LIMIT $3[0m  [["role_id", 3], ["applicant_id", 3], ["LIMIT", 1]]
+  ↳ app/models/role.rb:22:in `show_status'
+Completed 200 OK in 123ms (Views: 0.3ms | ActiveRecord: 35.4ms | Allocations: 25018)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (31.1ms) [0m[34mGenerated URL for file at key: kwr33o8g6sacd35f3ncp9q6tk58t (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhM2R5TXpOdk9HYzJjMkZqWkRNMVpqTnVZM0E1Y1RaMGF6VTRkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5OMFlXNHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkemRHRnVMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjMtMDUtMjZUMTg6NDQ6MTUuMzk4WiIsInB1ciI6ImJsb2Jfa2V5In19--70cd91142a82ae1604fadecee1d36d5d123b029e/stan.png)[0m
+[36m  Disk Storage (28.2ms) [0m[34mGenerated URL for file at key: rd9y9p00mftv98rje5bstulr4gim (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjbVE1ZVRsd01EQnRablIyT1RoeWFtVTFZbk4wZFd4eU5HZHBiUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSmxjbWxqTG5kbFluQWlPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlZ5YVdNdWQyVmljQVk3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMM2RsWW5BR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMy0wNS0yNlQxODo0NDoxNS40MDRaIiwicHVyIjoiYmxvYl9rZXkifX0=--329578f3402dfa55d3a2814b0fc6a44698670211/eric.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhM2R5TXpOdk9HYzJjMkZqWkRNMVpqTnVZM0E1Y1RaMGF6VTRkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5OMFlXNHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkemRHRnVMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjMtMDUtMjZUMTg6NDQ6MTUuMzk4WiIsInB1ciI6ImJsb2Jfa2V5In19--70cd91142a82ae1604fadecee1d36d5d123b029e/stan.png
+[36m  Disk Storage (29.2ms) [0m[34mGenerated URL for file at key: ifknm2sj6rcukeuii43dl6wprtcx (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhV1pyYm0weWMybzJjbU4xYTJWMWFXazBNMlJzTm5kd2NuUmplQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW10NWJHVXVhbkJsWnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmEzbHNaUzVxY0dWbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDIzLTA1LTI2VDE4OjQ0OjE1LjQwN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--fd64e0a35f81baf97e6b067e6f7007f7194bf1fe/kyle.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhV1pyYm0weWMybzJjbU4xYTJWMWFXazBNMlJzTm5kd2NuUmplQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW10NWJHVXVhbkJsWnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmEzbHNaUzVxY0dWbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDIzLTA1LTI2VDE4OjQ0OjE1LjQwN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--fd64e0a35f81baf97e6b067e6f7007f7194bf1fe/kyle.jpeg
+Completed 302 Found in 124ms (ActiveRecord: 13.9ms | Allocations: 27744)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjbVE1ZVRsd01EQnRablIyT1RoeWFtVTFZbk4wZFd4eU5HZHBiUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSmxjbWxqTG5kbFluQWlPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlZ5YVdNdWQyVmljQVk3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMM2RsWW5BR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMy0wNS0yNlQxODo0NDoxNS40MDRaIiwicHVyIjoiYmxvYl9rZXkifX0=--329578f3402dfa55d3a2814b0fc6a44698670211/eric.webp
+Completed 302 Found in 121ms (ActiveRecord: 13.7ms | Allocations: 27580)
+
+
+Completed 302 Found in 141ms (ActiveRecord: 14.3ms | Allocations: 29272)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhV1pyYm0weWMybzJjbU4xYTJWMWFXazBNMlJzTm5kd2NuUmplQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW10NWJHVXVhbkJsWnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmEzbHNaUzVxY0dWbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDIzLTA1LTI2VDE4OjQ0OjE1LjQwN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--fd64e0a35f81baf97e6b067e6f7007f7194bf1fe/kyle.jpeg" for 172.19.0.1 at 2023-05-26 18:39:15 +0000
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhM2R5TXpOdk9HYzJjMkZqWkRNMVpqTnVZM0E1Y1RaMGF6VTRkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5OMFlXNHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkemRHRnVMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjMtMDUtMjZUMTg6NDQ6MTUuMzk4WiIsInB1ciI6ImJsb2Jfa2V5In19--70cd91142a82ae1604fadecee1d36d5d123b029e/stan.png" for 172.19.0.1 at 2023-05-26 18:39:15 +0000
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjbVE1ZVRsd01EQnRablIyT1RoeWFtVTFZbk4wZFd4eU5HZHBiUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSmxjbWxqTG5kbFluQWlPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlZ5YVdNdWQyVmljQVk3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMM2RsWW5BR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMy0wNS0yNlQxODo0NDoxNS40MDRaIiwicHVyIjoiYmxvYl9rZXkifX0=--329578f3402dfa55d3a2814b0fc6a44698670211/eric.webp" for 172.19.0.1 at 2023-05-26 18:39:15 +0000
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"kyle"}
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"stan"}
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"eric"}
+Completed 200 OK in 8ms (ActiveRecord: 0.0ms | Allocations: 740)
+
+
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 166)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 145)
+
+
