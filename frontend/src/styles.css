@@ -1,0 +1,128 @@
+  .custom-image {
+    width: 500px; /* Set the desired width */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+  }
+
+  .custom-link {
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .custom-link:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .custom-navbar{
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  .grid-container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .name{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container-item:hover{
+    color: rgba(0,0,0,0.2);
+  }
+
+  .container-item:hover > img{
+    opacity: 0.2;
+  }
+
+  .fontsize{
+    font-size: 30px;
+    font-weight:500;
+  }
+
+  .buttonFix{
+    margin-left: 10px;
+    height: 100%;
+}
+
+  .resizeImage{
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+  .fontSize2{
+    font-size: 20px;
+    font-weight:500;
+  }
+
+  .dropDownSize{
+    width: fit-content;
+  }
+
+  .hoverable:hover{
+    cursor: pointer;
+  }
+  
+  .hoverable:hover > img{
+    opacity: 0.2;
+  }
+
+  .listCell{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-style: solid;
+  }
+
+  /* align text in center and background transparent */
+    .centerText{
+        text-align: center;
+        background-color: transparent;
+        padding:10px
+    }
+
+    .fixRoles{
+        width: 50%;
+    }
+
+    .marginFix{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .marginFix2{
+        margin: 10px;
+    }
+
+    .fixForm{
+        width: 15rem;
+    }
+
+    .colorHoverable:hover{
+        color: rgba(0,0,0,0.2);
+    }
+
+
+  @media screen and (max-width: 800px) {
+    .grid-container {
+         grid-template-columns: repeat(2, 1fr);
+    }
+  }
