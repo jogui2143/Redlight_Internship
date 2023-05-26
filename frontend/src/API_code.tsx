@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+
 import {Applicant, Role, ApplicantRole} from './types';
 
 const request = axios.create({baseURL: 'http://localhost:3000/api/v1'});

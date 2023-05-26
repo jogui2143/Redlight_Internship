@@ -37,7 +37,7 @@ const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>, field: string)
     GetApplicant(id)
       .then(response => setApplicant(response))
       .catch(error => console.error('Error:', error));
-  }, []);
+  }, [id]);
 
 
   const handleEdit = (field: string) => {
@@ -113,7 +113,7 @@ const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>, field: string)
               <span className="fontsize">{applicant.applicant.name}</span>
             )}
             <button type="button" className="btn btn-outline-dark buttonFix" onClick={() => handleEdit('name')}>
-              <img className='resizeImage' src="/pencil.svg" alt='Image' />
+              <img className='resizeImage' src="/pencil.svg" alt="edit" />
             </button>
           </div>
           <div>
@@ -128,7 +128,7 @@ const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>, field: string)
               <span className="fontsize">{applicant.applicant.email}</span>
             )}
             <button type="button" className="btn btn-outline-dark buttonFix" onClick={() => handleEdit('email')}>
-              <img className='resizeImage' src="/pencil.svg" alt='Image' />
+              <img className='resizeImage' src="/pencil.svg" alt='edit' />
             </button>
           </div>
           <div>
@@ -139,7 +139,7 @@ const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>, field: string)
               <span className="fontsize">{applicant.applicant.phone}</span>
             )}
             <button type="button" className="btn btn-outline-dark buttonFix" onClick={() => handleEdit('phone')}>
-              <img className='resizeImage' src="/pencil.svg" alt='Image' />
+              <img className='resizeImage' src="/pencil.svg" alt='edit' />
             </button>
           </div>
           <div>
@@ -158,7 +158,7 @@ const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>, field: string)
           </div>
           <div>
                 <button type="button" className="btn btn-outline-dark buttonFix" onClick={() => handleDelete()}>
-                    <img className='resizeImage' src="/trash.svg" alt='Image' />
+                    <img className='resizeImage' src="/trash.svg" alt='trash' />
                 </button>
           </div>
         </div>

@@ -5,6 +5,7 @@ default: &default
   username: <%= ENV.fetch("DB_USERNAME") %>
   password: <%= ENV.fetch("DB_PASSWORD") %>
   pool: 5
+  port: 5432
 
 development:
   <<: *default

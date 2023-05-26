@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { CreateApplicant } from './API_code';
 import { ApplicantFormData } from './types';
 import {useNavigate} from 'react-router-dom';

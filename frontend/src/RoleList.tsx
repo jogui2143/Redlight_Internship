@@ -11,7 +11,6 @@ function RoleList() {
   const [roles, setRoles] = useState<RoleData[]>([]);
   const [search, setSearch] = useState<string>('');
   const [typed, setTyped] = useState<string>('');
-  const [selectedRole, setSelectedRole] = useState<string | null>(null);
   const [editable, setEditable] = useState(false);
   const [rol, setRol] = useState<Role>({ name: ''});
   const [errors, setErrors] = useState<Error | undefined>(undefined);
@@ -23,7 +22,6 @@ function RoleList() {
   };
 
   const handleSearch = () => {
-    setSelectedRole(null); // Reset the selected role when searching
     setSearch(typed);
   };
   
@@ -31,7 +29,6 @@ function RoleList() {
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      setSelectedRole(null); // Reset the selected role when pressing Enter
       handleSearch();
     }
   };
@@ -49,10 +46,6 @@ function RoleList() {
     });
     }
   };
-
-  // const handleRoleClick = (roleId: string) => {
-  //   setSelectedRole(roleId === selectedRole ? null : roleId);
-  // };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setRol({...rol, name: e.target.value});
@@ -80,8 +73,8 @@ function RoleList() {
               </div>
               )
               :(
-                <a className="navbar-brand hoverable"
-                onClick={() => {setEditable(!editable)}}>Create</a>
+                <div className="navbar-brand hoverable"
+                onClick={() => {setEditable(!editable)}}>Create</div>
               )}
             
             <form className="d-flex">

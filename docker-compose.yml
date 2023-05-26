@@ -1,15 +1,20 @@
 version: '3.5'
 services:
   db:
-    image: postgres
+    image: postgres:15-bullseye
+    ports:
+      - 5432:5432
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
+      - postgres:/var/lib/postgresql/data
+      - ./pg_hba.conf:/etc/postgresql/pg_hba.conf
     environment:
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
   web:
     build: .
-    tty: true
     command: bash -c "(bundle check || bundle install) && rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    stdin_open: true
+    tty: true
     volumes:
       - .:/myapp
     ports:
@@ -20,10 +25,11 @@ services:
       - DB_HOST=db
       - DB_USERNAME=postgres
       - DB_PASSWORD=password
+      - RAILS_ENV=development
   
   frontend:
     image: node:18
-    command: bash -c "cd frontend && yarn && yarn start"
+    command: bash -c "cd frontend && yarn install && yarn start"
     tty: true
     volumes:
       - ./frontend:/frontend
@@ -42,3 +48,4 @@ volumes:
   frontend:
   node_modules:
   postgres:
+  

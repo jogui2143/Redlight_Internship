@@ -35,7 +35,7 @@ const handleToggle = () => {
         <span className='fontSize2' >{status}</span>
             )}
     <button type="button" className="btn btn-outline-dark buttonFix" onClick={() => handleToggle()}>
-        <img className='resizeImage' src="/pencil.svg" alt='Image' />
+        <img className='resizeImage' src="/pencil.svg" alt='edit' />
     </button>
     </>
   );
