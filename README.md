@@ -9,8 +9,8 @@ A web application to manage applicants and its roles in the summer internship of
  
  1. Clone the repository:
  ```bash
- git clone https://github.com/jogui2143/Redlight_Internship_App.git
- cd Redlight_Internship_App
+ git clone https://github.com/jogui2143/Redlight_Internship.git
+ cd Redlight_Internship
   ```
   
 2. Build and start the application:
